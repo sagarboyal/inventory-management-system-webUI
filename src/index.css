@@ -1,1 +1,32 @@
 @import "tailwindcss";
+@import "./theme/tailwind-theme.css";
+@import "./theme/fonts-theme.css";
+
+
+html,
+body {
+  font-family: var(--font-inter);
+}
+
+
+@layer utilities {
+  .font-inter-regular {
+    font-family: var(--font-inter);
+    font-weight: 400;
+  }
+
+  .font-inter-medium {
+    font-family: var(--font-inter);
+    font-weight: 500;
+  }
+
+  .font-inter-semibold {
+    font-family: var(--font-inter);
+    font-weight: 600;
+  }
+
+  .font-inter-bold {
+    font-family: var(--font-inter);
+    font-weight: 700;
+  }
+}
