@@ -6,7 +6,7 @@ import Footer from "./components/layout/Footer";
 import Dashboard from "./pages/Dashboard";
 import Brands from "./pages/Brands";
 import Category from "./pages/Category";
-import CreateProduct from "./pages/CreateProduct";
+import CreateProduct from "./pages/createProduct/CreateProduct";
 import ExpiredProducts from "./pages/ExpiredProducts";
 import LowStocks from "./pages/LowStocks";
 import VariantAttributes from "./pages/VariantAttributes";
