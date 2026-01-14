@@ -7,10 +7,10 @@ import Dashboard from "./pages/Dashboard";
 import Brands from "./pages/Brands";
 import Category from "./pages/Category";
 import CreateProduct from "./pages/CreateProduct";
-import ExpiredProducts from "./pages/ExpiredProducts";
+import ExpiredProducts from "./pages/expiredProducts/ExpiredProducts";
 import LowStocks from "./pages/LowStocks";
 import VariantAttributes from "./pages/VariantAttributes";
-import Product from "./pages/Product";
+import Product from "./pages/products/Product";
 import SubCategory from "./pages/SubCategory";
 import SuperAdmin from "./pages/SuperAdmin";
 
@@ -22,7 +22,7 @@ function App() {
       <div className="flex flex-1 overflow-hidden">
         <Sidebar />
 
-        <main className="flex-1 overflow-y-auto bg-gray-50 p-6">
+        <main className="flex-1 overflow-y-auto bg-gray-100 p-6">
           <Routes>
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/brands" element={<Brands />} />

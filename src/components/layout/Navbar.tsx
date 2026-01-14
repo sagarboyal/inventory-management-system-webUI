@@ -6,7 +6,7 @@ import { MdOutlineSettings } from "react-icons/md";
 function Navbar() {
   return (
     <header>
-      <nav className="flex border border-gray-300">
+      <nav className="flex border border-gray-200">
         <div className="flex">
           <div className="py-3.5 pl-4 pr-30">
             <a href="/">
