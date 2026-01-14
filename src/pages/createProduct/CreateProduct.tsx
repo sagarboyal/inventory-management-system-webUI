@@ -1,4 +1,4 @@
-import PriceStock from "./PriceStock";
+//import PriceStock from "./PriceStock";
 import ProductInfo from "./ProductInfo";
 
 
