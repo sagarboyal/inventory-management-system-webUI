@@ -21,7 +21,7 @@ function Navbar() {
             >
               <img className="h-4" src={images.food_img} alt="" />
               <span className="text-gray-700">Freshmart</span>
-              <FaAngleDown className="text-gray-500" />
+              <FaAngleDown className="text-gray-500"/>
             </button>
           </div>
         </div>

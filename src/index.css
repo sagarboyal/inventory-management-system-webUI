@@ -2,14 +2,20 @@
 @import "./theme/tailwind-theme.css";
 @import "./theme/fonts-theme.css";
 
-
 html,
 body {
   font-family: var(--font-inter);
 }
 
-
 @layer utilities {
+  .font-inter-extralight {
+    font-family: var(--font-inter);
+    font-weight: 200;
+  }
+  .font-inter-light {
+    font-family: var(--font-inter);
+    font-weight: 300;
+  }
   .font-inter-regular {
     font-family: var(--font-inter);
     font-weight: 400;

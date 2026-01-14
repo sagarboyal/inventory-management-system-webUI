@@ -1,45 +1,38 @@
 import { Routes, Route } from "react-router-dom";
-import Navbar from "./components/layout/Navbar";
-import Sidebar from "./components/layout/Sidebar";
-import Footer from "./components/layout/Footer";
 
 import Dashboard from "./pages/Dashboard";
 import Brands from "./pages/Brands";
 import Category from "./pages/Category";
 import CreateProduct from "./pages/CreateProduct";
-import ExpiredProducts from "./pages/expiredProducts/ExpiredProducts";
+import ExpiredProducts from "./pages/ExpiredProducts";
 import LowStocks from "./pages/LowStocks";
 import VariantAttributes from "./pages/VariantAttributes";
-import Product from "./pages/products/Product";
+import Product from "./pages/Product";
 import SubCategory from "./pages/SubCategory";
 import SuperAdmin from "./pages/SuperAdmin";
+import LoginPage from "./pages/LoginPage";
+import Units from "./pages/Units";
+import Layout from "./components/layout/Layout";
 
 function App() {
   return (
-    <div className="h-screen flex flex-col">
-      <Navbar />
+    <Routes>
+      <Route path="/" element={<LoginPage />} />
 
-      <div className="flex flex-1 overflow-hidden">
-        <Sidebar />
-
-        <main className="flex-1 overflow-y-auto bg-gray-100 p-6">
-          <Routes>
-            <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/brands" element={<Brands />} />
-            <Route path="/category" element={<Category />} />
-            <Route path="/create-product" element={<CreateProduct />} />
-            <Route path="/expired-products" element={<ExpiredProducts />} />
-            <Route path="/low-stocks" element={<LowStocks />} />
-            <Route path="/variant-attributes" element={<VariantAttributes />} />
-            <Route path="/products" element={<Product />} />
-            <Route path="/sub-category" element={<SubCategory />} />
-            <Route path="/super-admin" element={<SuperAdmin />} />
-             <Route path="/unit" element={<SuperAdmin />} />
-          </Routes>
-        </main>
-      </div>
-      <Footer />
-    </div>
+      <Route element={<Layout />}>
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/brands" element={<Brands />} />
+        <Route path="/category" element={<Category />} />
+        <Route path="/create-product" element={<CreateProduct />} />
+        <Route path="/expired-products" element={<ExpiredProducts />} />
+        <Route path="/low-stocks" element={<LowStocks />} />
+        <Route path="/variant-attributes" element={<VariantAttributes />} />
+        <Route path="/products" element={<Product />} />
+        <Route path="/sub-category" element={<SubCategory />} />
+        <Route path="/super-admin" element={<SuperAdmin />} />
+        <Route path="/unit" element={<Units />} />
+      </Route>
+    </Routes>
   );
 }
 
