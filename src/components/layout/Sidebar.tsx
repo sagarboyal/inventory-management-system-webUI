@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const Sidebar = () => {
   return (
-    <aside className="bg-white w-64 shrink-0 p-6 shadow-sm">
+    <aside className="bg-white w-60 shrink-0 p-6 shadow-sm  border-r border-gray-200">
       <div className="space-y-6">
         {sidebarData.map((section, index) => (
           <div key={index}>
